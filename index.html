@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,20 +8,25 @@
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/style.css">
 </head>
+
 <body>
     <main>
         <header class="cabecalho">
             <h1>Gerador de QR code</h1>
             <p>Cole uma url ou digite um texto para criar o QR code</p>
         </header>
-        <form action=""></form>
-        <section class="inputs">
-            <input id="input-texto" type="text" placeholder="Insira o texto aqui" required/>
-            <button type="submit">Gerar QR code</button>
-        </section>
+        <form action="submit" id="form-qr-code">
+            <section class="inputs">
+                <input id="input-texto" type="text" placeholder="Insira o texto aqui" required/>
+                <button type="submit" id="botao">Gerar QR code</button>
+            </section>
+        </form>
         <section class="imagem">
             <img id="qr-imagem" src="" alt="qrcode-img">
         </section>
+
     </main>
+    <script type="text/javascript" src="./src/js/script.js"></script>
 </body>
+
 </html>

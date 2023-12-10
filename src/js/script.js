@@ -1,5 +1,9 @@
+const formulario = document.getElementById("form-qr-code");
 const elemento = document.getElementById("qr-imagem");
-let texto = document.getElementById("input-texto");
+const texto = document.getElementById("input-texto");
 let url = "https://api.qrserver.com/v1/create-qr-code/?size=200x200&data="
-let urlCompleta = url.concat(texto)
 
+formulario.addEventListener("submit", function(event) {
+    event.preventDefault()
+    elemento.src = url + texto.value;
+})
